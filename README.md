@@ -1,3 +1,3 @@
 # Amazen-Mazes
 
-Group Maze GitRepo :bust_in_silhouette:
+Group Maze Git Repo :bust_in_silhouette:
