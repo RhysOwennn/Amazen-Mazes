@@ -15,7 +15,7 @@ def create_obstacle():
     walldist = 16
     walls = 5
     doorwidth = 12
-    # ds
+    
     global newlis
     #left of maze
     #part 1
