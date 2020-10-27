@@ -185,7 +185,7 @@ def create_obstacle():
     return config.newlis
 
 
-def get_obstacle():
+def get_obstacles():
     global newlis
     newlis = create_obstacle()
     return config.newlis
