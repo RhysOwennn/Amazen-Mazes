@@ -35,7 +35,7 @@ def create_random_obstacles():
         obstacles_list.append(tup)
 
     #obstacle line 1
-    for i in range(175, 190):
+    for i in range(-190, -175):
         x = 0
         y = i
         tup = (x, y)
