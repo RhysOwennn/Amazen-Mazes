@@ -94,4 +94,3 @@ def get_obstacles():
     setup_maze(5)
     obstacles = list(convert_cells_dict_to_obstacles_list())
     return obstacles
-    return obstacles
