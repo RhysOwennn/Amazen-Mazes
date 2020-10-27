@@ -42,7 +42,7 @@ def is_corner(cell_num):
 
 
 def create_path_in_maze(squares):
-'''Remove obstacles to create path in maze'''
+    '''Remove obstacles to create path in maze'''
 
     sqr_num = []
     for j in range(1, squares):
