@@ -13,6 +13,7 @@ def add_obstacles_to_cells(coord, obstacle, square_number):
     i = len(cells)
     cells[str(i)] = {'coord' : coord, 'obstacle': obstacle, 'square': square_number}
 
+
 def add_wall_coords_to_cells(direction, length, start_x, start_y, square_num):
     '''Adds obstacles coordinates (grouped in vertical/horizontal line format) to cells dict'''
     
@@ -41,8 +42,8 @@ def is_corner(cell_num):
 
 
 def create_path_in_maze(squares):
-    '''Removes obstacles from squares to create path in maze'''
-    
+'''Remove obstacles to create path in maze'''
+
     sqr_num = []
     for j in range(1, squares):
         sqr_num.append(j)
@@ -74,8 +75,9 @@ def setup_maze(squares):
 
 
 def convert_cells_dict_to_obstacles_list():
-    '''Converts dictionary to obstacle list'''
-    
+    '''Convert obstacles dictionary to obstacles list
+    :: Returns obstacles list'''
+
     obstacles = []
     for i in range(len(cells)):
         obstacle = cells[str(i)]
@@ -85,10 +87,11 @@ def convert_cells_dict_to_obstacles_list():
     return obstacles
 
 
-def create_obstacles():
-    '''Creates maze
-    :: Returns obstacle list'''
-    
+def get_obstacles():
+    '''Creates maze with obstacles
+    :: Returns list of obstacles'''
+
     setup_maze(5)
     obstacles = list(convert_cells_dict_to_obstacles_list())
+    return obstacles
     return obstacles
